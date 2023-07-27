@@ -7,3 +7,5 @@ A simple client server project which can:
 
 ### requirement:
     - python 3.10
+
+Have a nice day
