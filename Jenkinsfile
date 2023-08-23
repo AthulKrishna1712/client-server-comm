@@ -3,10 +3,10 @@ pipeline {
         node {
             label 'docker-agent-python'
             }
-    triggers {
+      }
+     triggers {
         pollSCM '* * * * *'
     }
-      }
     stages {
         stage('Build') {
             steps {
@@ -20,7 +20,7 @@ pipeline {
             steps {
                 echo "Testing.."
                 sh '''
-                echo "doing test stuff.."
+                echo "doing test stuff..
                 '''
             }
         }
@@ -33,6 +33,7 @@ pipeline {
             }
         }
     }
+}
         }
     }
 }
